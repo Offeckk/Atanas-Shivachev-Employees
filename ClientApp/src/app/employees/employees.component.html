@@ -1,0 +1,15 @@
+<h1 id="tableLabel">Longest working pair of Employees</h1>
+
+<br>
+
+<div class="mb-3">
+  <label for="formFile" class="form-label">Choose CSV file with Employees</label>
+  <input type="file" class="form-control" id="formFile" (change)="onUploadFile($event)">
+</div>
+
+<p *ngIf="longestWorkingPair[0] != -1">
+  Employee[{{ longestWorkingPair[0] }}] and Employee[{{ longestWorkingPair[1] }}]
+  have worked together the longest period of time, which is {{ longestWorkingPair[2] }} days.
+</p>
+
+
